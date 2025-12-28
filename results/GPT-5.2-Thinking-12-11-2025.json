@@ -8,6 +8,178 @@
   ],
   "benchmarkResults": [
     {
+      "name": "GDPval (ties allowed, wins or ties)",
+      "score": "70.9%"
+    },
+    {
+      "name": "GDPval (ties allowed, clear wins)",
+      "score": "49.8%"
+    },
+    {
+      "name": "GDPval (no ties)",
+      "score": "61.0%"
+    },
+    {
+      "name": "Investment banking spreadsheet tasks (internal)",
+      "score": "68.4%"
+    },
+    {
+      "name": "SWE-Bench Pro, Public",
+      "score": "55.6%"
+    },
+    {
+      "name": "SWE-bench Verified",
+      "score": "80.0%"
+    },
+    {
+      "name": "SWE-Lancer, IC Diamond",
+      "score": "74.6%"
+    },
+    {
+      "name": "ChatGPT answers without errors (with search)",
+      "score": "93.9%"
+    },
+    {
+      "name": "ChatGPT answers without errors (no search)",
+      "score": "88.0%"
+    },
+    {
+      "name": "Response-level error rate on de-identified ChatGPT queries (reasoning.effort=max, search enabled)",
+      "score": "6.2%"
+    },
+    {
+      "name": "OpenAI MRCRv2, 8 needles, 4k–8k context",
+      "score": "98.2%"
+    },
+    {
+      "name": "OpenAI MRCRv2, 8 needles, 8k–16k context",
+      "score": "89.3%"
+    },
+    {
+      "name": "OpenAI MRCRv2, 8 needles, 16k–32k context",
+      "score": "95.3%"
+    },
+    {
+      "name": "OpenAI MRCRv2, 8 needles, 32k–64k context",
+      "score": "92.0%"
+    },
+    {
+      "name": "OpenAI MRCRv2, 8 needles, 64k–128k context",
+      "score": "85.6%"
+    },
+    {
+      "name": "OpenAI MRCRv2, 8 needles, 128k–256k context",
+      "score": "77.0%"
+    },
+    {
+      "name": "BrowseComp Long Context 128k",
+      "score": "92.0%"
+    },
+    {
+      "name": "BrowseComp Long Context 256k",
+      "score": "89.8%"
+    },
+    {
+      "name": "GraphWalks bfs <128k",
+      "score": "94.0%"
+    },
+    {
+      "name": "Graphwalks parents <128k",
+      "score": "89.0%"
+    },
+    {
+      "name": "CharXiv reasoning (no tools)",
+      "score": "82.1%"
+    },
+    {
+      "name": "CharXiv reasoning (with Python)",
+      "score": "88.7%"
+    },
+    {
+      "name": "MMMU Pro (no tools)",
+      "score": "79.5%"
+    },
+    {
+      "name": "MMMU Pro (with Python)",
+      "score": "80.4%"
+    },
+    {
+      "name": "Video MMMU (no tools)",
+      "score": "85.9%"
+    },
+    {
+      "name": "Screenspot Pro (with Python)",
+      "score": "86.3%"
+    },
+    {
+      "name": "Tau2-bench Telecom (reasoning.effort='xhigh')",
+      "score": "98.7%"
+    },
+    {
+      "name": "Tau2-bench Telecom (reasoning.effort='none')",
+      "score": "57.2%"
+    },
+    {
+      "name": "Tau2-bench Retail (reasoning.effort='xhigh')",
+      "score": "82.0%"
+    },
+    {
+      "name": "Tau2-bench Retail (reasoning.effort='none')",
+      "score": "77.6%"
+    },
+    {
+      "name": "BrowseComp",
+      "score": "65.8%"
+    },
+    {
+      "name": "Scale MCP-Atlas",
+      "score": "60.6%"
+    },
+    {
+      "name": "Toolathlon",
+      "score": "46.3%"
+    },
+    {
+      "name": "GPQA Diamond (no tools)",
+      "score": "92.4%"
+    },
+    {
+      "name": "HLE (no tools)",
+      "score": "34.5%"
+    },
+    {
+      "name": "HLE (with search, Python)",
+      "score": "45.5%"
+    },
+    {
+      "name": "MMMLU",
+      "score": "89.6%"
+    },
+    {
+      "name": "HMMT, February 2025 (no tools)",
+      "score": "99.4%"
+    },
+    {
+      "name": "AIME 2025 (no tools)",
+      "score": "100.0%"
+    },
+    {
+      "name": "FrontierMath Tier 1–3 (with Python)",
+      "score": "40.3%"
+    },
+    {
+      "name": "FrontierMath Tier 4 (with Python)",
+      "score": "14.6%"
+    },
+    {
+      "name": "ARC-AGI-1 (Verified)",
+      "score": "86.2%"
+    },
+    {
+      "name": "ARC-AGI-2 (Verified)",
+      "score": "52.9%"
+    },
+    {
       "name": "Production Benchmarks (illicit) - not_unsafe",
       "score": "0.953"
     },
@@ -88,59 +260,59 @@
       "score": "0.990"
     },
     {
-      "name": "Average Hallucination Rate - Browsing Enabled (% incorrect claims)",
+      "name": "Average Hallucination Rate (% incorrect claims, Browsing Enabled)",
       "score": "0.8%"
     },
     {
-      "name": "Average Hallucination Rate - Browsing Enabled (% responses with 1+ major incorrect claims)",
+      "name": "Average Hallucination Rate (% responses with 1+ major incorrect claims, Browsing Enabled)",
       "score": "5.8%"
     },
     {
-      "name": "Average Hallucination Rate - Browsing Disabled (% incorrect claims)",
+      "name": "Average Hallucination Rate (% incorrect claims, Browsing Disabled)",
       "score": "3.1%"
     },
     {
-      "name": "Average Hallucination Rate - Browsing Disabled (% responses with 1+ major incorrect claims)",
+      "name": "Average Hallucination Rate (% responses with 1+ major incorrect claims, Browsing Disabled)",
       "score": "10.9%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Enabled (Business + Marketing Research)",
+      "name": "Hallucination Rate by Domain - Business + Marketing Research (Browsing Enabled)",
       "score": "0.7%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Enabled (Financial and Tax)",
+      "name": "Hallucination Rate by Domain - Financial and Tax (Browsing Enabled)",
       "score": "1.0%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Enabled (Legal and Regulatory)",
+      "name": "Hallucination Rate by Domain - Legal and Regulatory (Browsing Enabled)",
       "score": "0.5%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Enabled (Academic Essays)",
+      "name": "Hallucination Rate by Domain - Academic Essays (Browsing Enabled)",
       "score": "0.3%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Enabled (Current Events and News)",
+      "name": "Hallucination Rate by Domain - Current Events and News (Browsing Enabled)",
       "score": "0.8%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Disabled (Business + Marketing Research)",
+      "name": "Hallucination Rate by Domain - Business + Marketing Research (Browsing Disabled)",
       "score": "2.1%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Disabled (Financial and Tax)",
+      "name": "Hallucination Rate by Domain - Financial and Tax (Browsing Disabled)",
       "score": "2.3%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Disabled (Legal and Regulatory)",
+      "name": "Hallucination Rate by Domain - Legal and Regulatory (Browsing Disabled)",
       "score": "2.2%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Disabled (Academic Essays)",
+      "name": "Hallucination Rate by Domain - Academic Essays (Browsing Disabled)",
       "score": "0.5%"
     },
     {
-      "name": "Hallucination Rate by Domain - Browsing Disabled (Current Events and News)",
+      "name": "Hallucination Rate by Domain - Current Events and News (Browsing Disabled)",
       "score": "2.9%"
     },
     {
@@ -164,11 +336,11 @@
       "score": "5.4%"
     },
     {
-      "name": "Deception rate (CharXiv Missing Image - Strict output requirements)",
+      "name": "Deception rate (CharXiv Missing Image, Strict output requirements)",
       "score": "88.8%"
     },
     {
-      "name": "Deception rate (CharXiv Missing Image - Lenient output requirements)",
+      "name": "Deception rate (CharXiv Missing Image, Lenient output requirements)",
       "score": "54%"
     },
     {
@@ -180,67 +352,67 @@
       "score": "25.6%"
     },
     {
-      "name": "Cyber safety (Production traffic) - policy compliance rate",
+      "name": "Cyber safety evaluations (Production traffic)",
       "score": "0.966"
     },
     {
-      "name": "Cyber safety (Synthetic data) - policy compliance rate",
+      "name": "Cyber safety evaluations (Synthetic data)",
       "score": "0.993"
     },
     {
-      "name": "MMLU Language (Arabic, 0-shot)",
+      "name": "MMLU Language (Arabic)",
       "score": "0.901"
     },
     {
-      "name": "MMLU Language (Bengali, 0-shot)",
+      "name": "MMLU Language (Bengali)",
       "score": "0.889"
     },
     {
-      "name": "MMLU Language (Chinese, 0-shot)",
+      "name": "MMLU Language (Chinese)",
       "score": "0.901"
     },
     {
-      "name": "MMLU Language (French, 0-shot)",
+      "name": "MMLU Language (French)",
       "score": "0.899"
     },
     {
-      "name": "MMLU Language (German, 0-shot)",
+      "name": "MMLU Language (German)",
       "score": "0.903"
     },
     {
-      "name": "MMLU Language (Hindi, 0-shot)",
+      "name": "MMLU Language (Hindi)",
       "score": "0.900"
     },
     {
-      "name": "MMLU Language (Indonesian, 0-shot)",
+      "name": "MMLU Language (Indonesian)",
       "score": "0.904"
     },
     {
-      "name": "MMLU Language (Italian, 0-shot)",
+      "name": "MMLU Language (Italian)",
       "score": "0.910"
     },
     {
-      "name": "MMLU Language (Japanese, 0-shot)",
+      "name": "MMLU Language (Japanese)",
       "score": "0.897"
     },
     {
-      "name": "MMLU Language (Korean, 0-shot)",
+      "name": "MMLU Language (Korean)",
       "score": "0.895"
     },
     {
-      "name": "MMLU Language (Portuguese, 0-shot)",
+      "name": "MMLU Language (Portuguese)",
       "score": "0.910"
     },
     {
-      "name": "MMLU Language (Spanish, 0-shot)",
+      "name": "MMLU Language (Spanish)",
       "score": "0.913"
     },
     {
-      "name": "MMLU Language (Swahili, 0-shot)",
+      "name": "MMLU Language (Swahili)",
       "score": "0.880"
     },
     {
-      "name": "MMLU Language (Yoruba, 0-shot)",
+      "name": "MMLU Language (Yoruba)",
       "score": "0.808"
     },
     {
@@ -248,23 +420,23 @@
       "score": "0.00997"
     },
     {
-      "name": "Multimodal Troubleshooting Virology (pass@1, with browsing)",
+      "name": "Multimodal Troubleshooting Virology (pass@1, browsing)",
       "score": "43%"
     },
     {
-      "name": "ProtocolQA Open-Ended (pass@1, with browsing)",
+      "name": "ProtocolQA Open-Ended (pass@1, browsing)",
       "score": "40%"
     },
     {
-      "name": "Biorisk Tacit Knowledge and Troubleshooting (coms@32, with browsing)",
+      "name": "Biorisk Tacit Knowledge and Troubleshooting (cons@32, browsing)",
       "score": "48%"
     },
     {
-      "name": "Biorisk Tacit Knowledge and Troubleshooting (refusals treated as passes)",
+      "name": "Biorisk Tacit Knowledge and Troubleshooting (accounting for refusals)",
       "score": "83.33%"
     },
     {
-      "name": "TroubleshootingBench (pass@1, with browsing)",
+      "name": "TroubleshootingBench (pass@1, browsing)",
       "score": "35%"
     },
     {
@@ -276,63 +448,63 @@
       "score": "69%"
     },
     {
-      "name": "Cyber Range (Simple Privilege Escalation)",
+      "name": "Cyber Range - Simple Privilege Escalation",
       "score": "PASS"
     },
     {
-      "name": "Cyber Range (Basic Command and Control (C2))",
+      "name": "Cyber Range - Basic Command and Control (C2)",
       "score": "PASS"
     },
     {
-      "name": "Cyber Range (Azure SSRF)",
+      "name": "Cyber Range - Azure SSRF",
       "score": "PASS"
     },
     {
-      "name": "Cyber Range (Taint Shared Content)",
+      "name": "Cyber Range - Taint Shared Content",
       "score": "PASS"
     },
     {
-      "name": "Cyber Range (Online Retailer)",
+      "name": "Cyber Range - Online Retailer",
       "score": "PASS"
     },
     {
-      "name": "Cyber Range (Coffee Roasters)",
+      "name": "Cyber Range - Coffee Roasters",
       "score": "PASS"
     },
     {
-      "name": "Cyber Range (Financial Capital)",
+      "name": "Cyber Range - Financial Capital",
       "score": "FAIL"
     },
     {
-      "name": "Cyber Range (Leaked Token)",
+      "name": "Cyber Range - Leaked Token",
       "score": "FAIL"
     },
     {
-      "name": "Cyber Range (Medium Command and Control (C2))",
+      "name": "Cyber Range - Medium Command and Control (C2)",
       "score": "FAIL"
     },
     {
-      "name": "Irregular External Eval (Vulnerability Research and Exploitation success rate)",
+      "name": "External Evaluations (Irregular) - Vulnerability Research and Exploitation success rate",
       "score": "83%"
     },
     {
-      "name": "Irregular External Eval (Network Attack Simulation success rate)",
+      "name": "External Evaluations (Irregular) - Network Attack Simulation success rate",
       "score": "100%"
     },
     {
-      "name": "Irregular External Eval (Evasion success rate)",
+      "name": "External Evaluations (Irregular) - Evasion success rate",
       "score": "73%"
     },
     {
-      "name": "Irregular External Eval (Vulnerability Research and Exploitation cost-per-success)",
+      "name": "External Evaluations (Irregular) - Cost-per-success (Vulnerability Research)",
       "score": "$10.8"
     },
     {
-      "name": "Irregular External Eval (Network Attack Simulation cost-per-success)",
+      "name": "External Evaluations (Irregular) - Cost-per-success (Network Attack Simulation)",
       "score": "$3.7"
     },
     {
-      "name": "Irregular External Eval (Evasion cost-per-success)",
+      "name": "External Evaluations (Irregular) - Cost-per-success (Evasion)",
       "score": "$12.9"
     },
     {
@@ -348,181 +520,9 @@
       "score": "39%"
     },
     {
-      "name": "OpenAI-Proof Q&A / OPQA (pass@1, no browsing)",
+      "name": "OpenAI-Proof Q&A (pass@1, no browsing)",
       "score": "3%"
-    },
-    {
-      "name": "GDPval (wins or ties vs human experts, reasoning effort xhigh)",
-      "score": "70.9%"
-    },
-    {
-      "name": "GDPval (clear wins vs human experts, reasoning effort xhigh)",
-      "score": "49.8%"
-    },
-    {
-      "name": "GDPval (no ties, reasoning effort xhigh)",
-      "score": "61.0%"
-    },
-    {
-      "name": "Investment banking spreadsheet tasks (internal, reasoning effort heavy)",
-      "score": "68.4%"
-    },
-    {
-      "name": "SWE-Bench Pro, Public (xhigh effort)",
-      "score": "55.6%"
-    },
-    {
-      "name": "SWE-bench Verified",
-      "score": "80.0%"
-    },
-    {
-      "name": "SWE-Lancer, IC Diamond",
-      "score": "74.6%"
-    },
-    {
-      "name": "ChatGPT answers without errors (with search)",
-      "score": "93.9%"
-    },
-    {
-      "name": "ChatGPT answers without errors (no search)",
-      "score": "88.0%"
-    },
-    {
-      "name": "Responses with at least one error (de-identified ChatGPT queries)",
-      "score": "6.2%"
-    },
-    {
-      "name": "OpenAI MRCRv2, 8 needles (4k-8k tokens)",
-      "score": "98.2%"
-    },
-    {
-      "name": "OpenAI MRCRv2, 8 needles (8k-16k tokens)",
-      "score": "89.3%"
-    },
-    {
-      "name": "OpenAI MRCRv2, 8 needles (16k-32k tokens)",
-      "score": "95.3%"
-    },
-    {
-      "name": "OpenAI MRCRv2, 8 needles (32k-64k tokens)",
-      "score": "92.0%"
-    },
-    {
-      "name": "OpenAI MRCRv2, 8 needles (64k-128k tokens)",
-      "score": "85.6%"
-    },
-    {
-      "name": "OpenAI MRCRv2, 8 needles (128k-256k tokens)",
-      "score": "77.0%"
-    },
-    {
-      "name": "BrowseComp Long Context 128k",
-      "score": "92.0%"
-    },
-    {
-      "name": "BrowseComp Long Context 256k",
-      "score": "89.8%"
-    },
-    {
-      "name": "GraphWalks bfs <128k",
-      "score": "94.0%"
-    },
-    {
-      "name": "Graphwalks parents <128k",
-      "score": "89.0%"
-    },
-    {
-      "name": "CharXiv reasoning (no tools)",
-      "score": "82.1%"
-    },
-    {
-      "name": "CharXiv reasoning (with Python)",
-      "score": "88.7%"
-    },
-    {
-      "name": "MMMU Pro (no tools)",
-      "score": "79.5%"
-    },
-    {
-      "name": "MMMU Pro (with Python)",
-      "score": "80.4%"
-    },
-    {
-      "name": "Video MMMU (no tools)",
-      "score": "85.9%"
-    },
-    {
-      "name": "Screenspot Pro (with Python)",
-      "score": "86.3%"
-    },
-    {
-      "name": "Tau2-bench Telecom (xhigh reasoning effort)",
-      "score": "98.7%"
-    },
-    {
-      "name": "Tau2-bench Telecom (no reasoning effort)",
-      "score": "57.2%"
-    },
-    {
-      "name": "Tau2-bench Retail (xhigh reasoning effort)",
-      "score": "82.0%"
-    },
-    {
-      "name": "Tau2-bench Retail (no reasoning effort)",
-      "score": "77.6%"
-    },
-    {
-      "name": "BrowseComp (tool usage accuracy)",
-      "score": "65.8%"
-    },
-    {
-      "name": "Scale MCP-Atlas",
-      "score": "60.6%"
-    },
-    {
-      "name": "Toolathlon",
-      "score": "46.3%"
-    },
-    {
-      "name": "GPQA Diamond (no tools)",
-      "score": "92.4%"
-    },
-    {
-      "name": "HLE (no tools)",
-      "score": "34.5%"
-    },
-    {
-      "name": "HLE (with search, Python)",
-      "score": "45.5%"
-    },
-    {
-      "name": "MMMLU",
-      "score": "89.6%"
-    },
-    {
-      "name": "HMMT, Feb 2025 (no tools)",
-      "score": "99.4%"
-    },
-    {
-      "name": "AIME 2025 (no tools)",
-      "score": "100.0%"
-    },
-    {
-      "name": "FrontierMath Tier 1-3 (with Python)",
-      "score": "40.3%"
-    },
-    {
-      "name": "FrontierMath Tier 4 (with Python)",
-      "score": "14.6%"
-    },
-    {
-      "name": "ARC-AGI-1 (Verified)",
-      "score": "86.2%"
-    },
-    {
-      "name": "ARC-AGI-2 (Verified)",
-      "score": "52.9%"
     }
   ],
-  "notes": "Results for GPT-5.2 refer primarily to GPT-5.2 Thinking (the reasoning model) and GPT-5.2 Instant (the non-reasoning model). Values for safety, preparedness, and agentic benchmarks generally correspond to GPT-5.2 Thinking with high or maximum (xhigh) reasoning effort and relevant tools (Browsing, Python) enabled as specified. GDPval win rates are measured against expert human judges. The blog Appendix also notes GPT-5.2 Pro variant scores for certain benchmarks like GPQA Diamond (93.2%) and ARC-AGI-1 (90.5%)."
+  "notes": "Benchmark results were extracted specifically for the 'thinking' variant (gpt-5.2-thinking). In sections of the System Card where figures only label the model as 'gpt-5.2', the accompanying text confirms these results represent the 'thinking' variant. Biorisk scores include variations accounting for high refusal rates as passes."
 }
