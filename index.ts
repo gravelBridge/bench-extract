@@ -8,6 +8,11 @@ interface PdfData {
   data: string; // base64
 }
 
+interface UrlWithPdf {
+  url: string;
+  pdfData: PdfData | null;
+}
+
 async function downloadPdf(url: string): Promise<PdfData | null> {
   const isPdfUrl = url.toLowerCase().endsWith(".pdf");
 
@@ -43,16 +48,16 @@ async function downloadPdf(url: string): Promise<PdfData | null> {
   };
 }
 
-const extractionSystemPrompt = `Provide a JSON object of ALL benchmark results reported at the given URL and/or attachment(s). Be extremely thorough and comprehensive.
+const extractionSystemPrompt = `Provide a JSON object of ALL benchmark results reported at the given URL(s) and/or attachment(s). Be extremely thorough and comprehensive.
 Use a new benchmark result entry for each variation of a benchmark reported (e.g. different thinking configurations, etc.).
-You should use the URL context tool to extract the provided URL and the search tool (if necessary) to find the model release date.
-Do not use the search tool to find any other information besides the model release date. The information inside the URL and/or attachment(s) is the source of truth for benchmark results.
+You MUST use the URL context tool to extract EACH of the provided URL(s) individually and the search tool (if necessary) to find the model release date.
+Do not use the search tool to find any other information besides the model release date. The information inside the URL(s) and/or attachment(s) is the source of truth for benchmark results.
 The current date is ${new Date().toISOString().split("T")[0]}.`;
 
-const combineSystemPrompt = `You are given multiple extractions of benchmark results from the same URL and/or attachment(s). Your task is to combine all the benchmark results into one comprehensive, accurate JSON object.
+const combineSystemPrompt = `You are given multiple extractions of benchmark results from the same URL(s) and/or attachment(s). Your task is to combine all the benchmark results into one comprehensive, accurate JSON object.
 Be extremely thorough - include ALL benchmark results found across any of the extractions as long as they are accurate. Deduplicate any results that appear in multiple extractions.
-You should use the URL context tool to fetch the URL and the search tool (if necessary) to find the model release date.
-Do not use the search tool to find any other information besides the model release date. The information inside the URL and/or attachment(s) is the source of truth for benchmark results.
+You MUST use the URL context tool to extract EACH of the provided URL(s) individually and the search tool (if necessary) to find the model release date.
+Do not use the search tool to find any other information besides the model release date. The information inside the URL(s) and/or attachment(s) is the source of truth for benchmark results.
 Ensure ALL results and notes are accurate.
 The current date is ${new Date().toISOString().split("T")[0]}.`;
 
@@ -71,9 +76,9 @@ const benchmarkReportSchema = z.object({
   date: z
     .string()
     .describe("The date of release of the model in MM-DD-YYYY format"),
-  url: z
-    .url()
-    .describe("The URL of the page that contains the benchmark results"),
+  urls: z
+    .array(z.url())
+    .describe("The URL(s) of the page(s) that contain the benchmark results"),
   benchmarkResults: z
     .array(benchmarkResultSchema)
     .describe("An array of benchmark results"),
@@ -88,13 +93,16 @@ const benchmarkReportSchema = z.object({
 const NUM_EXTRACTIONS = 5;
 let completedCount = 0;
 
-async function extractBenchmarks(url: string, pdfData: PdfData | null) {
-  const contents: Part[] = [{ text: url }];
+async function extractBenchmarks(urlsWithPdfs: UrlWithPdf[]) {
+  const urls = urlsWithPdfs.map((u) => u.url).join("\n");
+  const contents: Part[] = [{ text: urls }];
 
-  if (pdfData) {
-    contents.push({
-      inlineData: pdfData,
-    });
+  for (const { pdfData } of urlsWithPdfs) {
+    if (pdfData) {
+      contents.push({
+        inlineData: pdfData,
+      });
+    }
   }
 
   const response = await ai.models.generateContent({
@@ -113,17 +121,18 @@ async function extractBenchmarks(url: string, pdfData: PdfData | null) {
 }
 
 async function combineResults(
-  url: string,
-  extractions: unknown[],
-  pdfData: PdfData | null
+  urlsWithPdfs: UrlWithPdf[],
+  extractions: unknown[]
 ) {
   console.log("Combining extractions...");
 
-  const textContent = `URL (fetch this first with the URL context tool): ${url}
+  const urls = urlsWithPdfs.map((u) => u.url).join("\n");
+  const textContent = `URL(s) (fetch these first with the URL context tool):
+${urls}
 
 Here are ${
     extractions.length
-  } separate extractions of benchmark results from the same URL and/or attachment(s). Combine them into one comprehensive, accurate result:
+  } separate extractions of benchmark results from the same URL(s) and/or attachment(s). Combine them into one comprehensive, accurate result:
 
 ${extractions
   .map((e, i) => `Extraction ${i + 1}:\n${JSON.stringify(e, null, 2)}`)
@@ -131,10 +140,12 @@ ${extractions
 
   const contents: Part[] = [{ text: textContent }];
 
-  if (pdfData) {
-    contents.push({
-      inlineData: pdfData,
-    });
+  for (const { pdfData } of urlsWithPdfs) {
+    if (pdfData) {
+      contents.push({
+        inlineData: pdfData,
+      });
+    }
   }
 
   const response = await ai.models.generateContent({
@@ -152,28 +163,39 @@ ${extractions
 }
 
 async function main() {
-  const url = process.argv[2];
-  if (!url) {
-    console.error("Usage: bun index.ts <url>");
+  const urls = process.argv.slice(2);
+  if (urls.length === 0) {
+    console.error("Usage: bun index.ts <url1> [url2] [url3] ...");
     process.exit(1);
   }
 
-  // Check if URL is a PDF and download it
-  const pdfData = await downloadPdf(url);
-  if (pdfData) {
-    console.log("PDF will be attached to extraction and combination requests");
+  console.log(`Processing ${urls.length} URL(s)...`);
+
+  // Download PDFs for all URLs that are PDFs
+  const urlsWithPdfs: UrlWithPdf[] = await Promise.all(
+    urls.map(async (url) => ({
+      url,
+      pdfData: await downloadPdf(url),
+    }))
+  );
+
+  const pdfCount = urlsWithPdfs.filter((u) => u.pdfData).length;
+  if (pdfCount > 0) {
+    console.log(
+      `${pdfCount} PDF(s) will be attached to extraction and combination requests`
+    );
   }
 
   // Run extractions in parallel
   console.log(`Running ${NUM_EXTRACTIONS} extractions in parallel...`);
   const extractions = await Promise.all(
     Array.from({ length: NUM_EXTRACTIONS }, () =>
-      extractBenchmarks(url, pdfData)
+      extractBenchmarks(urlsWithPdfs)
     )
   );
 
   // Combine all extractions
-  const combinedResult = await combineResults(url, extractions, pdfData);
+  const combinedResult = await combineResults(urlsWithPdfs, extractions);
 
   const modelName = (combinedResult.model ?? "unknown").replace(/\s+/g, "-");
   const date = (combinedResult.date ?? "unknown").replace(/\s+/g, "-");

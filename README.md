@@ -1,6 +1,6 @@
 # bench-extract
 
-Given a URL (announcement, blog post, model card PDF), five Gemini 3 Flash (preview) instances extract all benchmark scores reported. All five extractions are sent to one "combiner" Gemini 3 Flash instance. This is done to maximize comprehensiveness and accuracy of extraction coverage.
+Given URL(s) for a single model (announcement, blog post, model card PDF, etc.), five Gemini 3 Flash (preview) instances extract all benchmark scores reported for that model inside all provided URLs. All five extractions are sent to one "combiner" Gemini 3 Flash instance. This is done to maximize comprehensiveness and accuracy of extraction coverage.
 
 To install dependencies:
 
@@ -13,7 +13,7 @@ To run:
 First copy .env.example and create .env. Replace with your own AI Studio API key.
 
 ```bash
-bun run index.ts <url>
+bun run index.ts [url1] [url2] [url3] ...
 ```
 
 Results are stored under the results folder.

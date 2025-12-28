@@ -2,7 +2,7 @@
   "provider": "xAI",
   "model": "Grok 4",
   "date": "07-09-2025",
-  "url": "https://x.ai/news/grok-4",
+  "urls": ["https://x.ai/news/grok-4"],
   "benchmarkResults": [
     {
       "name": "Humanity's Last Exam (Full set, April 3, 2025) - Grok 4 Heavy w/ Python + Internet",
