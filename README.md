@@ -24,6 +24,8 @@ bun run index.ts [-m|--model-variant <variant>] <url1> [url2] [url3] ...
 
 ### Examples
 
+Example results can be found in the results folder.
+
 Extract benchmarks for a single model:
 
 ```bash
