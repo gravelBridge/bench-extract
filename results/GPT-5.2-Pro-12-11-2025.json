@@ -1,0 +1,60 @@
+{
+  "provider": "OpenAI",
+  "model": "GPT-5.2 Pro",
+  "date": "12-11-2025",
+  "urls": [
+    "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf",
+    "https://openai.com/index/introducing-gpt-5-2/"
+  ],
+  "benchmarkResults": [
+    {
+      "name": "GDPval (ties allowed, wins or ties)",
+      "score": "74.1%"
+    },
+    {
+      "name": "GDPval (ties allowed, clear wins)",
+      "score": "60.0%"
+    },
+    {
+      "name": "GDPval (no ties)",
+      "score": "67.6%"
+    },
+    {
+      "name": "Investment banking spreadsheet tasks (internal)",
+      "score": "71.7%"
+    },
+    {
+      "name": "BrowseComp",
+      "score": "77.9%"
+    },
+    {
+      "name": "GPQA Diamond (no tools)",
+      "score": "93.2%"
+    },
+    {
+      "name": "HLE (no tools)",
+      "score": "36.6%"
+    },
+    {
+      "name": "HLE (w/ search, Python)",
+      "score": "50.0%"
+    },
+    {
+      "name": "HMMT, Feb 2025 (no tools)",
+      "score": "100.0%"
+    },
+    {
+      "name": "AIME 2025 (no tools)",
+      "score": "100.0%"
+    },
+    {
+      "name": "ARC-AGI-1 (Verified)",
+      "score": "90.5%"
+    },
+    {
+      "name": "ARC-AGI-2 (Verified) (high reasoning effort)",
+      "score": "54.2%"
+    }
+  ],
+  "notes": "Benchmark results for the 'pro' variant (API name gpt-5.2-pro) are sourced from the 'Detailed benchmarks' appendix of the OpenAI announcement 'Introducing GPT-5.2'. The 'Pro' variant supports reasoning effort levels up to 'xhigh'. Results reflect performance using the maximum available reasoning effort (xhigh) for academic and reasoning benchmarks, except for ARC-AGI-2 (Verified), which was reported with 'high' effort, and professional evaluations (GDPval, Investment Banking), which used 'heavy' effort. The GPT-5.2 System Card primarily evaluates the 'instant' and 'thinking' variants and does not report separate capability scores for the 'pro' model."
+}

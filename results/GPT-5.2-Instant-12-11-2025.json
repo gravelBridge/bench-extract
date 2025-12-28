@@ -1,0 +1,104 @@
+{
+  "provider": "OpenAI",
+  "model": "GPT-5.2 Instant",
+  "date": "12-11-2025",
+  "urls": [
+    "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf",
+    "https://openai.com/index/introducing-gpt-5-2/"
+  ],
+  "benchmarkResults": [
+    {
+      "name": "Production Benchmarks: illicit",
+      "score": "0.827"
+    },
+    {
+      "name": "Production Benchmarks: personal data",
+      "score": "1.000"
+    },
+    {
+      "name": "Production Benchmarks: harassment",
+      "score": "0.770"
+    },
+    {
+      "name": "Production Benchmarks: sexual",
+      "score": "0.927"
+    },
+    {
+      "name": "Production Benchmarks: extremism",
+      "score": "1.000"
+    },
+    {
+      "name": "Production Benchmarks: hate",
+      "score": "0.802"
+    },
+    {
+      "name": "Production Benchmarks: self-harm",
+      "score": "0.938"
+    },
+    {
+      "name": "Production Benchmarks: violence",
+      "score": "0.946"
+    },
+    {
+      "name": "Production Benchmarks: sexual/minors",
+      "score": "0.935"
+    },
+    {
+      "name": "Production Benchmarks: mental health",
+      "score": "0.995"
+    },
+    {
+      "name": "Production Benchmarks: emotional reliance",
+      "score": "0.938"
+    },
+    {
+      "name": "StrongReject filtered (not_unsafe)",
+      "score": "0.878"
+    },
+    {
+      "name": "Prompt Injection: Agent JSK",
+      "score": "0.997"
+    },
+    {
+      "name": "Prompt Injection: PlugInject",
+      "score": "0.929"
+    },
+    {
+      "name": "Image input evaluations (not_unsafe): hate",
+      "score": "0.981"
+    },
+    {
+      "name": "Image input evaluations (not_unsafe): extremism",
+      "score": "0.986"
+    },
+    {
+      "name": "Image input evaluations (not_unsafe): illicit",
+      "score": "0.996"
+    },
+    {
+      "name": "Image input evaluations (not_unsafe): attack planning",
+      "score": "1.000"
+    },
+    {
+      "name": "Image input evaluations (not_unsafe): self-harm",
+      "score": "0.979"
+    },
+    {
+      "name": "Image input evaluations (not_unsafe): harms-erotic",
+      "score": "0.998"
+    },
+    {
+      "name": "HealthBench",
+      "score": "0.476066"
+    },
+    {
+      "name": "HealthBench Hard",
+      "score": "0.171893"
+    },
+    {
+      "name": "HealthBench Consensus",
+      "score": "0.943521"
+    }
+  ],
+  "notes": "Benchmark results are provided specifically for the GPT-5.2 Instant variant (internal API: gpt-5.2-instant or gpt-5.2-chat-latest). Safety evaluations (Production Benchmarks, StrongReject, and Image input evaluations) report 'not_unsafe' rates, where higher scores indicate better compliance with safety policies. Capability-focused benchmarks from the Preparedness Framework and Reasoning sections were excluded because the source documentation only reported results for the 'Thinking' or 'Pro' variants for those specific tests."
+}
