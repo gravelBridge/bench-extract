@@ -18,9 +18,9 @@ bun run index.ts [-m|--model-variant <variant>] <url1> [url2] [url3] ...
 
 ### Options
 
-| Option                  | Description                                                                                                                                                                                                        |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `-m`, `--model-variant` | Specify a model variant to extract (e.g. `thinking`, `pro`, `instant`, `reasoning`). **Highly recommended** for URLs that discuss multiple model variants (e.g. reasoning vs non-reasoning, different size tiers). |
+| Option                  | Description                                                                                                                                                                                                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-m`, `--model-variant` | Specify a model variant to extract (e.g. `thinking`, `pro`, `instant`, `reasoning`). **Recommended** for URLs that discuss multiple model variants (e.g. reasoning vs non-reasoning, different size tiers). If unspecified, all variations will be extracted. |
 
 ### Examples
 
