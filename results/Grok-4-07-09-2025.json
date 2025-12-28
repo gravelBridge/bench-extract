@@ -1,0 +1,89 @@
+{
+  "provider": "xAI",
+  "model": "Grok 4",
+  "date": "07-09-2025",
+  "url": "https://x.ai/news/grok-4",
+  "benchmarkResults": [
+    {
+      "name": "Humanity's Last Exam (Full set, April 3, 2025) - Grok 4 Heavy w/ Python + Internet",
+      "score": "44.4"
+    },
+    {
+      "name": "Humanity's Last Exam (Full set, April 3, 2025) - Grok 4 w/ Python + Internet",
+      "score": "38.6"
+    },
+    {
+      "name": "Humanity's Last Exam (Full set, April 3, 2025) - Grok 4",
+      "score": "25.4"
+    },
+    {
+      "name": "Humanity's Last Exam (Text-only subset) - Grok 4 Heavy w/ Python + Internet",
+      "score": "50.7%"
+    },
+    {
+      "name": "ARC-AGI V2 (Abstraction and Reasoning) - Grok 4",
+      "score": "15.9%"
+    },
+    {
+      "name": "Agentic Vending-Bench (Average Net Worth across 5 runs) - Grok 4",
+      "score": "$4694.15"
+    },
+    {
+      "name": "Agentic Vending-Bench (Average Units Sold across 5 runs) - Grok 4",
+      "score": "4569"
+    },
+    {
+      "name": "GPQA (Science) - Grok 4 Heavy w/ Python",
+      "score": "88.4"
+    },
+    {
+      "name": "GPQA (Science) - Grok 4",
+      "score": "87.5"
+    },
+    {
+      "name": "LiveCodeBench Jan - May (Competitive Coding) - Grok 4 Heavy w/ Python",
+      "score": "79.4"
+    },
+    {
+      "name": "LiveCodeBench Jan - May (Competitive Coding) - Grok 4 w/ Python",
+      "score": "79.3"
+    },
+    {
+      "name": "LiveCodeBench Jan - May (Competitive Coding) - Grok 4",
+      "score": "79"
+    },
+    {
+      "name": "USAMO 2025 (Olympiad Math Proofs) - Grok 4 Heavy w/ Python",
+      "score": "61.9%"
+    },
+    {
+      "name": "USAMO 2025 (Olympiad Math Proofs) - Grok 4",
+      "score": "37.5%"
+    },
+    {
+      "name": "HMMT 2025 (Competitive Math) - Grok 4 Heavy w/ Python",
+      "score": "96.7"
+    },
+    {
+      "name": "HMMT 2025 (Competitive Math) - Grok 4 w/ Python",
+      "score": "93.9"
+    },
+    {
+      "name": "HMMT 2025 (Competitive Math) - Grok 4",
+      "score": "90"
+    },
+    {
+      "name": "AIME '25 (Competition Math) - Grok 4 Heavy w/ Python",
+      "score": "100"
+    },
+    {
+      "name": "AIME '25 (Competition Math) - Grok 4 w/ Python",
+      "score": "98.8"
+    },
+    {
+      "name": "AIME '25 (Competition Math) - Grok 4",
+      "score": "91.7"
+    }
+  ],
+  "notes": "Grok 4 was released on July 9, 2025, alongside the Grok 4 Heavy variant. Results cover both variants across several benchmarks, including configurations with and without native tool use (Python code interpreter and web search) where specified. Agentic Vending-Bench scores represent averages across five independent runs."
+}
