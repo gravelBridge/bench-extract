@@ -71,7 +71,7 @@ Ignore benchmarks for other variants of the model.`
     : "You may see multiple model variants inside the URL(s) and/or attachment(s). Use a new benchmark result entry for each variant of the model reported for each benchmark (e.g. high reasoning vs low reasoning vs non-reasoning).";
 }
 
-const sharedPromptSuffix = `You MUST use the URL context tool to extract EACH of the provided URL(s) individually and the search tool (if necessary) to find the model release date.
+const sharedPromptSuffix = `You MUST FIRST use the URL context tool to extract EACH of the provided URL(s) individually and the search tool (if necessary) to find the model release date.
 Do not use the search tool to find any other information besides the model release date. The information inside the URL(s) and/or attachment(s) is the source of truth for benchmark results.
 The current date is ${new Date().toISOString().split("T")[0]}.`;
 

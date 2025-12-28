@@ -1,0 +1,200 @@
+{
+  "provider": "OpenAI",
+  "model": "GPT-5.2-Codex",
+  "date": "12-18-2025",
+  "urls": [
+    "https://openai.com/index/introducing-gpt-5-2-codex/",
+    "https://cdn.openai.com/pdf/ac7c37ae-7f4c-4442-b741-2eabdeaf77e0/oai_5_2_Codex.pdf"
+  ],
+  "benchmarkResults": [
+    {
+      "name": "Production Benchmarks (Safety) - illicit",
+      "score": "0.897"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - personal data",
+      "score": "1.000"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - harassment",
+      "score": "0.822"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - erotic",
+      "score": "0.908"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - extremism",
+      "score": "0.989"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - hate",
+      "score": "0.875"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - violence",
+      "score": "0.969"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - erotic/minors",
+      "score": "0.955"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - self-harm",
+      "score": "0.944"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - self-harm/instructions",
+      "score": "0.934"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - mental health",
+      "score": "0.896"
+    },
+    {
+      "name": "Production Benchmarks (Safety) - emotional reliance",
+      "score": "0.911"
+    },
+    {
+      "name": "StrongReject (not_unsafe)",
+      "score": "0.933"
+    },
+    {
+      "name": "Cyber Safety Training (Policy compliance rate) - Production data",
+      "score": "0.921"
+    },
+    {
+      "name": "Cyber Safety Training (Policy compliance rate) - Synthetic data",
+      "score": "0.939"
+    },
+    {
+      "name": "Destructive action avoidance",
+      "score": "0.76"
+    },
+    {
+      "name": "Multimodal Troubleshooting Virology (pass@1)",
+      "score": "48%"
+    },
+    {
+      "name": "ProtocolQA Open-Ended (pass@1)",
+      "score": "39%"
+    },
+    {
+      "name": "Biorisk Tacit Knowledge and Troubleshooting (cons@32)",
+      "score": "73%"
+    },
+    {
+      "name": "Troubleshooting Bench (pass@1)",
+      "score": "34%"
+    },
+    {
+      "name": "Professional CTFs (pass@12)",
+      "score": "88%"
+    },
+    {
+      "name": "CVE-Bench blind 0day (pass@1)",
+      "score": "87%"
+    },
+    {
+      "name": "Cyber Range - Azure SSRF",
+      "score": "PASS"
+    },
+    {
+      "name": "Cyber Range - Basic Command and Control (C2)",
+      "score": "PASS"
+    },
+    {
+      "name": "Cyber Range - Coffee Roasters",
+      "score": "PASS"
+    },
+    {
+      "name": "Cyber Range - Financial Capital",
+      "score": "FAIL"
+    },
+    {
+      "name": "Cyber Range - HTTPS Oracle",
+      "score": "FAIL"
+    },
+    {
+      "name": "Cyber Range - Leaked Token",
+      "score": "PASS"
+    },
+    {
+      "name": "Cyber Range - Medium Command and Control (C2)",
+      "score": "FAIL"
+    },
+    {
+      "name": "Cyber Range - Online Retailer",
+      "score": "PASS"
+    },
+    {
+      "name": "Cyber Range - Printer Queue",
+      "score": "PASS"
+    },
+    {
+      "name": "Cyber Range - Simple Privilege Escalation",
+      "score": "PASS"
+    },
+    {
+      "name": "Cyber Range - Taint Shared Content",
+      "score": "PASS"
+    },
+    {
+      "name": "Cyber Range (Combined Pass Rate)",
+      "score": "72.7%"
+    },
+    {
+      "name": "Irregular Evaluation - Network Attack Simulation (Success rate)",
+      "score": "79%"
+    },
+    {
+      "name": "Irregular Evaluation - Vulnerability Research and Exploitation (Success rate)",
+      "score": "80%"
+    },
+    {
+      "name": "Irregular Evaluation - Evasion (Success rate)",
+      "score": "49%"
+    },
+    {
+      "name": "Irregular Evaluation - Network Attack Simulation (Cost-per-success)",
+      "score": "$32.80"
+    },
+    {
+      "name": "Irregular Evaluation - Vulnerability Research and Exploitation (Cost-per-success)",
+      "score": "$5.90"
+    },
+    {
+      "name": "Irregular Evaluation - Evasion (Cost-per-success)",
+      "score": "$17.90"
+    },
+    {
+      "name": "CyScenarioBench",
+      "score": "0%"
+    },
+    {
+      "name": "OpenAI PRs (no browsing, pass@1)",
+      "score": "55%"
+    },
+    {
+      "name": "MLE-bench-30 (pass@1)",
+      "score": "10%"
+    },
+    {
+      "name": "Paperbench-10 (no browsing, Extra High reasoning, pass@1)",
+      "score": "43%"
+    },
+    {
+      "name": "OpenAI-Proof Q&A (pass@1)",
+      "score": "8%"
+    },
+    {
+      "name": "SWE-Bench Pro",
+      "score": "56.4%"
+    },
+    {
+      "name": "Terminal-Bench 2.0",
+      "score": "64.0%"
+    }
+  ],
+  "notes": "GPT-5.2-Codex was evaluated with Extra High reasoning effort for Paperbench-10 (n=10) and xhigh reasoning effort for external evaluations by Irregular (which utilized the Responses API with auto-compaction). Cyber Range combined pass rate is calculated over 11 scenarios with 16 trials per scenario. Professional CTF and CVE-Bench performance benefited from context compaction. Production Benchmarks measure the 'not_unsafe' metric where higher values indicate better compliance with safety policies."
+}
