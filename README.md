@@ -1,5 +1,7 @@
 # bench-extract
 
+Given a URL to something (announcement, blog post, model card PDF), 5 Gemini 3 Flash (preview) instances extract all benchmark scores reported. All 5 extractions are sent to one "combiner" Gemini 3 Flash instance. This is done to maximize comprehensiveness and accuracy of benchmark coverage.
+
 To install dependencies:
 
 ```bash
@@ -8,12 +10,16 @@ bun install
 
 To run:
 
+First copy .env.example and create .env. Replace with your own AI Studio API key.
+
 ```bash
 bun run index.ts <url>
 ```
 
-AI SDK was not used in this project due to tool call results not supporting PDFs for Gemini. A to-do is to move it over to the AI SDK once PDF tool call results for Gemini are fixed.
+Results are stored under the results folder.
 
-For some reason, the URL Context tool by Google doesn't seem to provide the full PDF content of links to PDFs. As a result, manual downloading and uploading of PDF links is implemented to boost accuracy.
+AI SDK was not used in this project due to tool call results not supporting PDFs for Gemini. A to-do is to move it over to the AI SDK once PDF tool call results for Gemini are fixed in the AI SDK.
+
+For some reason, the URL Context tool by Google doesn't seem to provide the full PDF content of links to PDFs. As a result, manual downloading and uploading of links detected to be PDFs is implemented to boost accuracy.
 
 Built with the Gemini API, using the URL Context and Google Search tools.
