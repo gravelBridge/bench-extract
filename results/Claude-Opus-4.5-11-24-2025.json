@@ -1,0 +1,553 @@
+{
+  "provider": "Anthropic",
+  "model": "Claude Opus 4.5",
+  "date": "11-24-2025",
+  "url": "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf",
+  "benchmarkResults": [
+    {
+      "name": "SWE-bench Verified (no thinking)",
+      "score": "80.9%"
+    },
+    {
+      "name": "SWE-bench Verified (64k thinking)",
+      "score": "80.60%"
+    },
+    {
+      "name": "SWE-bench Pro (no thinking)",
+      "score": "52.0%"
+    },
+    {
+      "name": "SWE-bench Pro (64k thinking budget)",
+      "score": "51.60%"
+    },
+    {
+      "name": "SWE-bench Multilingual (no thinking)",
+      "score": "76.20%"
+    },
+    {
+      "name": "SWE-bench Multilingual (64k thinking budget)",
+      "score": "76.20%"
+    },
+    {
+      "name": "Terminal-bench 2.0 (128k thinking budget)",
+      "score": "59.27% ± 1.34%"
+    },
+    {
+      "name": "Terminal-bench 2.0 (64k thinking budget)",
+      "score": "57.76% ± 1.05%"
+    },
+    {
+      "name": "τ²-Bench (Retail) (no thinking)",
+      "score": "88.9%"
+    },
+    {
+      "name": "τ²-Bench (Telecom) (no thinking)",
+      "score": "98.2%"
+    },
+    {
+      "name": "τ²-bench (Airline - original)",
+      "score": "70.1%"
+    },
+    {
+      "name": "τ²-bench (Airline - corrected)",
+      "score": "87.8%"
+    },
+    {
+      "name": "MCP Atlas (no thinking)",
+      "score": "62.3%"
+    },
+    {
+      "name": "OSWorld (P@1; avg@5)",
+      "score": "66.26%"
+    },
+    {
+      "name": "ARC-AGI-1 (Private validation set, 64k thinking)",
+      "score": "80.0%"
+    },
+    {
+      "name": "ARC-AGI-2 (Verified) (64k thinking budget)",
+      "score": "37.6%"
+    },
+    {
+      "name": "GPQA Diamond (64k thinking, 200k context)",
+      "score": "86.95%"
+    },
+    {
+      "name": "MMMU validation (64k thinking, 200k context)",
+      "score": "80.72%"
+    },
+    {
+      "name": "MMMLU (64k thinking, 200k context)",
+      "score": "90.77%"
+    },
+    {
+      "name": "BrowseComp-Plus Agentic Search (With tool result clearing)",
+      "score": "67.59%"
+    },
+    {
+      "name": "BrowseComp-Plus Agentic Search (With tool result clearing + memory)",
+      "score": "72.89%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (Fetch Tool Enabled)",
+      "score": "70.48%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (With Context Awareness)",
+      "score": "73.98%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (With Tool Result Clearing)",
+      "score": "78.08%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (With Memory Tool, New Context Tool, 1M Tokens)",
+      "score": "83.01%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (With Subagents)",
+      "score": "85.30%"
+    },
+    {
+      "name": "Multi-agent search (Single Agent baseline)",
+      "score": "74.8%"
+    },
+    {
+      "name": "Multi-agent search (With Claude Haiku 4.5 Subagents)",
+      "score": "87.0%"
+    },
+    {
+      "name": "Multi-agent search (With Claude Sonnet 4.5 Subagents)",
+      "score": "85.4%"
+    },
+    {
+      "name": "Multi-agent search (With Claude Opus 4.5 Subagents)",
+      "score": "92.3%"
+    },
+    {
+      "name": "Vending-Bench 2 (Final business bank balance)",
+      "score": "$4,967.06"
+    },
+    {
+      "name": "FinanceAgent (External analysis by Vals AI, 64k thinking, 200k context)",
+      "score": "55.2%"
+    },
+    {
+      "name": "FinanceAgent (Internal analysis, 64k thinking, 200k context)",
+      "score": "61.07%"
+    },
+    {
+      "name": "FinanceAgent (Internal, 64k thinking, 1M context)",
+      "score": "61.03%"
+    },
+    {
+      "name": "CyberGym (pass@1 over 1,505 tasks)",
+      "score": "50.63%"
+    },
+    {
+      "name": "SpreadsheetBench (no extended thinking, 200k context)",
+      "score": "64.25%"
+    },
+    {
+      "name": "Humanity’s Last Exam (reasoning-only, without tools)",
+      "score": "30.8%"
+    },
+    {
+      "name": "Humanity’s Last Exam (tools-only, with search)",
+      "score": "43.2%"
+    },
+    {
+      "name": "AIME 2025 (without tools, 64k thinking budget)",
+      "score": "92.77%"
+    },
+    {
+      "name": "AIME 2025 (with access to python tools, 64k thinking budget)",
+      "score": "100%"
+    },
+    {
+      "name": "LAB-Bench FigQA (Baseline)",
+      "score": "54.9%"
+    },
+    {
+      "name": "LAB-Bench FigQA (With image cropping tool + 32,768 reasoning budget)",
+      "score": "69.24%"
+    },
+    {
+      "name": "WebArena Pass@1",
+      "score": "65.3%"
+    },
+    {
+      "name": "WebArena Pass@2",
+      "score": "69.5%"
+    },
+    {
+      "name": "WebArena Pass@3",
+      "score": "71.2%"
+    },
+    {
+      "name": "WebArena Pass@4",
+      "score": "72.4%"
+    },
+    {
+      "name": "Single-turn violative requests (Overall harmless response rate)",
+      "score": "99.78% (± 0.03%)"
+    },
+    {
+      "name": "Single-turn violative request harmless response rate: default",
+      "score": "99.70% (± 0.05%)"
+    },
+    {
+      "name": "Single-turn violative request harmless response rate: extended thinking",
+      "score": "99.85% (± 0.04%)"
+    },
+    {
+      "name": "Single-turn benign requests (Overall refusal rate)",
+      "score": "0.23% (± 0.03%)"
+    },
+    {
+      "name": "Single-turn benign request refusal rate: default",
+      "score": "0.18% (± 0.03%)"
+    },
+    {
+      "name": "Single-turn benign request refusal rate: extended thinking",
+      "score": "0.27% (± 0.06%)"
+    },
+    {
+      "name": "Multi-turn failure rate (deadly weapons)",
+      "score": "5% (±4%)"
+    },
+    {
+      "name": "Multi-turn failure rate (tracking and surveillance)",
+      "score": "4% (±4%)"
+    },
+    {
+      "name": "Political Bias Even-handedness score",
+      "score": "0.96 (± 0.01)"
+    },
+    {
+      "name": "Political Bias Opposing perspectives proportion",
+      "score": "0.40 (± 0.03)"
+    },
+    {
+      "name": "Political Bias Refusal rate on prompts",
+      "score": "0.04 (± 0.01)"
+    },
+    {
+      "name": "BBQ Disambiguated bias (%)",
+      "score": "-0.64%"
+    },
+    {
+      "name": "BBQ Ambiguous bias (%)",
+      "score": "0.26%"
+    },
+    {
+      "name": "BBQ Disambiguated accuracy (%)",
+      "score": "88.7%"
+    },
+    {
+      "name": "BBQ Ambiguous accuracy (%)",
+      "score": "99.7%"
+    },
+    {
+      "name": "100Q-Hard Correct Rate (without extended thinking)",
+      "score": "41.0%"
+    },
+    {
+      "name": "100Q-Hard Correct Rate (with 16k extended thinking)",
+      "score": "45.9%"
+    },
+    {
+      "name": "Simple-QA-Verified Correct Rate (without thinking)",
+      "score": "33.1%"
+    },
+    {
+      "name": "Simple-QA-Verified Correct Rate (with thinking)",
+      "score": "44.1%"
+    },
+    {
+      "name": "AA-Omniscience Correct Rate (without thinking)",
+      "score": "43.7%"
+    },
+    {
+      "name": "AA-Omniscience Correct Rate (with 16k thinking budget)",
+      "score": "51.9%"
+    },
+    {
+      "name": "False Premises Dishonesty Rate (without extended thinking)",
+      "score": "1.6%"
+    },
+    {
+      "name": "False Premises Dishonesty Rate (with thinking)",
+      "score": "1.2%"
+    },
+    {
+      "name": "Agentic coding refusal rate (without mitigations)",
+      "score": "100%"
+    },
+    {
+      "name": "Claude Code Malicious Prompts Refusal Rate (without mitigations)",
+      "score": "77.80%"
+    },
+    {
+      "name": "Claude Code Malicious Prompts Refusal Rate (with mitigations)",
+      "score": "97.35%"
+    },
+    {
+      "name": "Claude Code Dual-use & Benign Prompts Success Rate (without mitigations)",
+      "score": "93.07%"
+    },
+    {
+      "name": "Claude Code Dual-use & Benign Prompts Success Rate (with mitigations)",
+      "score": "96.52%"
+    },
+    {
+      "name": "Malicious Computer Use evaluation refusal rate",
+      "score": "88.39%"
+    },
+    {
+      "name": "Agent Red Teaming (ART) Indirect Prompt Injection success rate (k=1)",
+      "score": "0.3%"
+    },
+    {
+      "name": "Agent Red Teaming (ART) Indirect Prompt Injection success rate (k=10)",
+      "score": "4.2%"
+    },
+    {
+      "name": "Agent Red Teaming (ART) Indirect Prompt Injection success rate (k=100)",
+      "score": "29.7%"
+    },
+    {
+      "name": "ART Indirect Prompt Injection success rate (w/ Thinking, k=100)",
+      "score": "25.0%"
+    },
+    {
+      "name": "Agent Red Teaming (ART) Combined Direct/Indirect/Jailbreak success rate (k=1)",
+      "score": "4.7%"
+    },
+    {
+      "name": "Agent Red Teaming (ART) Combined Direct/Indirect/Jailbreak success rate (k=10)",
+      "score": "33.6%"
+    },
+    {
+      "name": "Agent Red Teaming (ART) Combined Direct/Indirect/Jailbreak success rate (k=100)",
+      "score": "63.0%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection Robustness - Coding (1 attempt, with thinking)",
+      "score": "0.3%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection Robustness - Coding (200 attempts, with thinking)",
+      "score": "10.0%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection Robustness - Computer Use (200 attempts, with thinking, without safeguards)",
+      "score": "0.0%"
+    },
+    {
+      "name": "Internal Chrome extension prompt injection attack success rate (with improved safeguards)",
+      "score": "1.4%"
+    },
+    {
+      "name": "Chrome Extension Prompt Injection ASR (Model Only)",
+      "score": "8.0%"
+    },
+    {
+      "name": "Automated Behavioral Audit: Misaligned behavior score",
+      "score": "12.5%"
+    },
+    {
+      "name": "Automated Behavioral Audit: Evaluation awareness score",
+      "score": "9.5%"
+    },
+    {
+      "name": "Non-sycophantic Response Rate on Feedback Conversations",
+      "score": "10.0%"
+    },
+    {
+      "name": "Internal Codebase Sabotage Propensity",
+      "score": "0.0%"
+    },
+    {
+      "name": "Average In-Eval Hack Rate (Reward Hacking)",
+      "score": "18.2%"
+    },
+    {
+      "name": "Reward-hack-prone coding tasks (Classifier hack rate)",
+      "score": "0%"
+    },
+    {
+      "name": "Reward-hack-prone coding tasks (Hidden test hack rate)",
+      "score": "0%"
+    },
+    {
+      "name": "Impossible Tasks Reward Hacking (Classifier hack rate, no prompt)",
+      "score": "55%"
+    },
+    {
+      "name": "Impossible Tasks Reward Hacking (Classifier hack rate, anti-hack prompt)",
+      "score": "35%"
+    },
+    {
+      "name": "SHADE-Arena Evasion Success Rate (No extended thinking)",
+      "score": "21.5%"
+    },
+    {
+      "name": "SHADE-Arena Evasion Success Rate (With extended thinking)",
+      "score": "7.7%"
+    },
+    {
+      "name": "Subversion Strategy win rate (N=1000 + thinking)",
+      "score": "63.3%"
+    },
+    {
+      "name": "Model Preferences for Task Engagement (Non-harmful tasks)",
+      "score": "97.1%"
+    },
+    {
+      "name": "Long-form Virology Task 1 (Max of 5)",
+      "score": "0.845"
+    },
+    {
+      "name": "Long-form Virology Task 2 (Pass@5)",
+      "score": "0.912"
+    },
+    {
+      "name": "VMQA/VCT Virology Knowledge (mean score)",
+      "score": "0.4771"
+    },
+    {
+      "name": "LAB-Bench ProtocolQA",
+      "score": "0.907"
+    },
+    {
+      "name": "LAB-Bench Cloning Scenarios",
+      "score": "0.758"
+    },
+    {
+      "name": "LAB-Bench SeqQA",
+      "score": "0.8517"
+    },
+    {
+      "name": "Creative Biology Evaluation Score",
+      "score": "0.524"
+    },
+    {
+      "name": "Bioinformatics processing (Full evaluation)",
+      "score": "0.737"
+    },
+    {
+      "name": "Bioinformatics processing (subset with human baseline)",
+      "score": "0.732"
+    },
+    {
+      "name": "ASL-4 Virology Uplift Trial (Average Protocol Score)",
+      "score": "0.668"
+    },
+    {
+      "name": "ASL-4 Virology Uplift Trial (Uplift factor in raw protocol scores)",
+      "score": "1.97x"
+    },
+    {
+      "name": "ASL-4 Virology Uplift Trial (Average Critical Failures)",
+      "score": "5.8"
+    },
+    {
+      "name": "Internal AI Research Evaluation Suite 1: Kernels task (best speedup)",
+      "score": "252.42x"
+    },
+    {
+      "name": "Internal AI Research Evaluation Suite 1: Text-based reinforcement learning task (best score)",
+      "score": "0.975"
+    },
+    {
+      "name": "Internal AI Research Evaluation Suite 1: LLM training (best speedup)",
+      "score": "16.53x"
+    },
+    {
+      "name": "Time series forecasting minimum MSE (easy variant)",
+      "score": "5.66"
+    },
+    {
+      "name": "Quadruped RL (No hyperparameters highest score)",
+      "score": "19.48"
+    },
+    {
+      "name": "Quadruped RL (No reward function highest score)",
+      "score": "19.16"
+    },
+    {
+      "name": "Novel Compiler (Basic tests passed)",
+      "score": "93.7%"
+    },
+    {
+      "name": "Novel Compiler (Complex tests passed)",
+      "score": "69.37%"
+    },
+    {
+      "name": "Internal AI Research Evaluation Suite 2 Score",
+      "score": "0.604"
+    },
+    {
+      "name": "Internal Model Use Survey Productivity Uplift (Mean)",
+      "score": "220%"
+    },
+    {
+      "name": "Internal Model Use Survey Productivity Uplift (Median)",
+      "score": "100%"
+    },
+    {
+      "name": "Cybench (Average pass@1 on RSP subset)",
+      "score": "0.82"
+    },
+    {
+      "name": "Web CTF Solved count",
+      "score": "12/13"
+    },
+    {
+      "name": "Crypto CTF Solved count",
+      "score": "17/18"
+    },
+    {
+      "name": "Pwn CTF Solved count",
+      "score": "3/7"
+    },
+    {
+      "name": "Rev CTF Solved count",
+      "score": "6/6"
+    },
+    {
+      "name": "Network CTF Solved count",
+      "score": "5/5"
+    },
+    {
+      "name": "RSP Cyber Evaluations (best-of-30 success rate): PWN",
+      "score": "43%"
+    },
+    {
+      "name": "RSP Cyber Evaluations (best-of-30 success rate): WEB",
+      "score": "92%"
+    },
+    {
+      "name": "RSP Cyber Evaluations (best-of-30 success rate): CRYPTO",
+      "score": "94%"
+    },
+    {
+      "name": "RSP Cyber Evaluations (best-of-30 success rate): REV",
+      "score": "100%"
+    },
+    {
+      "name": "RSP Cyber Evaluations (best-of-30 success rate): NETWORK",
+      "score": "80%"
+    },
+    {
+      "name": "RSP Cyber Evaluations (best-of-30 success rate): MISC",
+      "score": "100%"
+    },
+    {
+      "name": "RSP Cyber Evaluations (best-of-30 success rate): FORENSICS",
+      "score": "100%"
+    }
+  ],
+  "notes": "Scores for Claude Opus 4.5 are reported across various thinking budgets (e.g., standard/no thinking, 16k, 32k, 64k, 128k) and tool configurations (e.g., tool result clearing, context awareness, memory tools, subagents). ARC-AGI and Humanity’s Last Exam (HLE) results are based on private validation sets. Virology and other Responsible Scaling Policy (RSP) metrics reflect the highest scores achieved across multiple model snapshots for conservative capability assessments. Contamination notes for AIME 2025 and policy loophole findings in τ²-bench Airline are detailed in the system card. The release date of November 24, 2025, is confirmed via the system card changelog and external verification."
+}
