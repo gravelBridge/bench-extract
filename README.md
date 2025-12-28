@@ -13,7 +13,7 @@ To run:
 First copy .env.example and create .env. Replace with your own AI Studio API key.
 
 ```bash
-bun run index.ts [-m|--model-variant <variant>] <url1> [url2] [url3] ...
+bun index.ts [-m|--model-variant <variant>] <url1> [url2] [url3] ...
 ```
 
 ### Options
@@ -29,14 +29,14 @@ Example results can be found in the results folder.
 Extract benchmarks for a single model:
 
 ```bash
-bun run index.ts https://example.com/model-announcement
+bun index.ts https://example.com/model-announcement
 ```
 
 Extract benchmarks for a specific variant when the URL covers multiple variants:
 
 ```bash
-bun run index.ts -m thinking https://example.com/model-family-announcement
-bun run index.ts --model-variant pro https://example.com/model-card.pdf
+bun index.ts -m thinking https://example.com/model-family-announcement
+bun index.ts --model-variant pro https://example.com/model-card.pdf
 ```
 
 Results are stored under the results folder.
