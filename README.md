@@ -1,6 +1,6 @@
 # bench-extract
 
-Given a URL to something (announcement, blog post, model card PDF), 5 Gemini 3 Flash (preview) instances extract all benchmark scores reported. All 5 extractions are sent to one "combiner" Gemini 3 Flash instance. This is done to maximize comprehensiveness and accuracy of benchmark coverage.
+Given a URL (announcement, blog post, model card PDF), five Gemini 3 Flash (preview) instances extract all benchmark scores reported. All five extractions are sent to one "combiner" Gemini 3 Flash instance. This is done to maximize comprehensiveness and accuracy of extraction coverage.
 
 To install dependencies:
 
