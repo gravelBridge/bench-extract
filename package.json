@@ -1,12 +1,16 @@
 {
   "name": "bench-extract",
   "module": "index.ts",
-  "type": "module",
-  "private": true,
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^1.34.0",
+    "zod": "^4.2.1"
   }
 }
