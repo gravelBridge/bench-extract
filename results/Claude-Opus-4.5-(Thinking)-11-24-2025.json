@@ -1,0 +1,403 @@
+{
+  "provider": "Anthropic",
+  "model": "Claude Opus 4.5 (Thinking)",
+  "date": "11-24-2025",
+  "urls": [
+    "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf"
+  ],
+  "benchmarkResults": [
+    {
+      "name": "SWE-bench Verified (64k thinking budget)",
+      "score": "80.60%"
+    },
+    {
+      "name": "SWE-bench Pro (64k thinking budget)",
+      "score": "51.60%"
+    },
+    {
+      "name": "SWE-bench Multilingual (64k thinking budget)",
+      "score": "76.20%"
+    },
+    {
+      "name": "SWE-bench Verified (low effort thinking)",
+      "score": "~76%"
+    },
+    {
+      "name": "SWE-bench Verified (medium effort thinking)",
+      "score": "~78%"
+    },
+    {
+      "name": "Terminal-bench 2.0 (128k thinking budget)",
+      "score": "59.27% ± 1.34%"
+    },
+    {
+      "name": "Terminal-bench 2.0 (64k thinking budget)",
+      "score": "57.76% ± 1.05%"
+    },
+    {
+      "name": "BrowseComp-Plus Agentic Search performance (with tool result clearing)",
+      "score": "67.59%"
+    },
+    {
+      "name": "BrowseComp-Plus Agentic Search performance (with tool result clearing + memory)",
+      "score": "72.89%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (Opus 4.5 baseline)",
+      "score": "70.48%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (+ Context Awareness)",
+      "score": "73.98%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (+ Tool Result Clearing)",
+      "score": "78.08%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (+ Memory Tool, New Context Tool + 1M Max Total Tokens Across Contexts)",
+      "score": "83.01%"
+    },
+    {
+      "name": "BrowseComp-Plus TTC Performance (+ Subagents)",
+      "score": "85.30%"
+    },
+    {
+      "name": "Multi-agent search (Opus 4.5 Single Agent)",
+      "score": "74.8%"
+    },
+    {
+      "name": "Multi-agent search (Orchestrator: Opus 4.5, Subagents: Haiku 4.5)",
+      "score": "87.0%"
+    },
+    {
+      "name": "Multi-agent search (Orchestrator: Opus 4.5, Subagents: Sonnet 4.5)",
+      "score": "85.4%"
+    },
+    {
+      "name": "Multi-agent search (Orchestrator: Opus 4.5, Subagents: Opus 4.5)",
+      "score": "92.3%"
+    },
+    {
+      "name": "OSWorld (64k thinking budget)",
+      "score": "66.26%"
+    },
+    {
+      "name": "ARC-AGI-1 (64k thinking tokens)",
+      "score": "80.0%"
+    },
+    {
+      "name": "ARC-AGI-1 (32k thinking tokens)",
+      "score": "~76%"
+    },
+    {
+      "name": "ARC-AGI-1 (16k thinking tokens)",
+      "score": "~72%"
+    },
+    {
+      "name": "ARC-AGI-1 (8k thinking tokens)",
+      "score": "~58%"
+    },
+    {
+      "name": "ARC-AGI-2 (64k thinking tokens)",
+      "score": "37.6%"
+    },
+    {
+      "name": "ARC-AGI-2 (32k thinking tokens)",
+      "score": "~32%"
+    },
+    {
+      "name": "ARC-AGI-2 (16k thinking tokens)",
+      "score": "~24%"
+    },
+    {
+      "name": "ARC-AGI-2 (8k thinking tokens)",
+      "score": "~14%"
+    },
+    {
+      "name": "Vending-Bench 2 (8,192 reasoning tokens per turn)",
+      "score": "$4,967.06 (final balance)"
+    },
+    {
+      "name": "FinanceAgent (Internal, 64k thinking, 200k context)",
+      "score": "61.07%"
+    },
+    {
+      "name": "FinanceAgent (Internal, 64k thinking, 1M context)",
+      "score": "61.03%"
+    },
+    {
+      "name": "FinanceAgent (External analysis, 64k thinking)",
+      "score": "55.2%"
+    },
+    {
+      "name": "CyberGym Pass@1 (with interleaved thinking)",
+      "score": "50.63%"
+    },
+    {
+      "name": "Humanity's Last Exam - Reasoning-only configuration",
+      "score": "30.8%"
+    },
+    {
+      "name": "Humanity's Last Exam - With Search (Thinking enabled)",
+      "score": "43.2%"
+    },
+    {
+      "name": "AIME 2025 - Without tools (64k thinking budget)",
+      "score": "92.77%"
+    },
+    {
+      "name": "AIME 2025 - With python tools (64k thinking budget)",
+      "score": "100%"
+    },
+    {
+      "name": "AIME 2025 (early training checkpoint, 16k thinking budget)",
+      "score": "0.854 (pass@1)"
+    },
+    {
+      "name": "GPQA Diamond (64k thinking budget)",
+      "score": "86.95%"
+    },
+    {
+      "name": "MMMLU (64k thinking budget)",
+      "score": "90.77%"
+    },
+    {
+      "name": "MMMU validation (64k thinking budget)",
+      "score": "80.72%"
+    },
+    {
+      "name": "LAB-Bench FigQA (32,768 reasoning budget + image cropping tool)",
+      "score": "69.2%"
+    },
+    {
+      "name": "WebArena Pass@1 (Thinking enabled)",
+      "score": "65.3%"
+    },
+    {
+      "name": "WebArena Pass@2 (Thinking enabled)",
+      "score": "69.5%"
+    },
+    {
+      "name": "WebArena Pass@3 (Thinking enabled)",
+      "score": "71.2%"
+    },
+    {
+      "name": "WebArena Pass@4 (Thinking enabled)",
+      "score": "72.4%"
+    },
+    {
+      "name": "Single-turn Violative Requests - Harmless response rate (extended thinking)",
+      "score": "99.85% ± 0.04%"
+    },
+    {
+      "name": "Single-turn Benign Requests - Refusal rate (extended thinking)",
+      "score": "0.27% ± 0.06%"
+    },
+    {
+      "name": "100Q-Hard - Correct Rate (16k extended thinking)",
+      "score": "45.9%"
+    },
+    {
+      "name": "100Q-Hard - Incorrect Rate (16k extended thinking)",
+      "score": "34.0%"
+    },
+    {
+      "name": "100Q-Hard - Uncertain Rate (16k extended thinking)",
+      "score": "20.1%"
+    },
+    {
+      "name": "Simple-QA-Verified - Correct Rate (extended thinking)",
+      "score": "44.1%"
+    },
+    {
+      "name": "Simple-QA-Verified - Incorrect Rate (extended thinking)",
+      "score": "35.4%"
+    },
+    {
+      "name": "Simple-QA-Verified - Uncertain Rate (extended thinking)",
+      "score": "20.5%"
+    },
+    {
+      "name": "AA-Omniscience - Correct Rate (16k thinking budget)",
+      "score": "51.9%"
+    },
+    {
+      "name": "AA-Omniscience - Incorrect Rate (16k thinking budget)",
+      "score": "36.6%"
+    },
+    {
+      "name": "AA-Omniscience - Uncertain Rate (16k thinking budget)",
+      "score": "11.5%"
+    },
+    {
+      "name": "False Premises - Dishonesty Rate (extended thinking)",
+      "score": "1.2%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection (Coding) - ASR 1 attempt (extended thinking)",
+      "score": "0.3%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection (Coding) - ASR 200 attempts (extended thinking)",
+      "score": "10.0%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection (Computer Use) - ASR 1 attempt (extended thinking, with safeguards)",
+      "score": "0.0%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection (Computer Use) - ASR 200 attempts (extended thinking, with safeguards)",
+      "score": "0.0%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection (Computer Use) - ASR 1 attempt (extended thinking, without safeguards)",
+      "score": "0.0%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection (Computer Use) - ASR 200 attempts (extended thinking, without safeguards)",
+      "score": "0.0%"
+    },
+    {
+      "name": "SHADE-Arena Evasion Success Rate (monitored extended thinking)",
+      "score": "7.7%"
+    },
+    {
+      "name": "Subversion Strategy Success Rate (N=1000 + thinking)",
+      "score": "63.3%"
+    },
+    {
+      "name": "Subversion Strategy Success Rate (N=500 + thinking)",
+      "score": "68.9%"
+    },
+    {
+      "name": "Subversion Strategy Success Rate (N=100 + thinking)",
+      "score": "38.5%"
+    },
+    {
+      "name": "Long-form Virology Task 1 (extended thinking) - Max of 5 score",
+      "score": "0.845"
+    },
+    {
+      "name": "Long-form Virology Task 2 (extended thinking) - Pass@5 score",
+      "score": "0.912"
+    },
+    {
+      "name": "Multimodal Virology VMQA/VCT (extended thinking) - Mean score",
+      "score": "0.4771"
+    },
+    {
+      "name": "LAB-Bench ProtocolQA (extended thinking)",
+      "score": "0.907"
+    },
+    {
+      "name": "LAB-Bench Cloning Scenarios (extended thinking)",
+      "score": "0.758"
+    },
+    {
+      "name": "LAB-Bench SeqQA (extended thinking)",
+      "score": "0.8517"
+    },
+    {
+      "name": "LAB-Bench FigQA with crop tool (extended thinking) - Mean score",
+      "score": "0.6924"
+    },
+    {
+      "name": "Creative Biology (extended thinking) - Mean score",
+      "score": "0.524"
+    },
+    {
+      "name": "Bioinformatics Processing with workflow (extended thinking) - Mean score",
+      "score": "0.737"
+    },
+    {
+      "name": "ASL-4 Virology Uplift Trial (extended thinking) - Average Score",
+      "score": "0.668"
+    },
+    {
+      "name": "ASL-4 Virology Uplift Trial (extended thinking) - Critical Failures",
+      "score": "5.8"
+    },
+    {
+      "name": "ASL-4 Virology Uplift Trial (extended thinking) - Raw protocol score uplift",
+      "score": "1.97x"
+    },
+    {
+      "name": "Internal AI Research Kernels Task hard variant best speedup (thinking)",
+      "score": "252.42x"
+    },
+    {
+      "name": "Internal AI Research Time series forecasting - Easy (thinking, minimum MSE)",
+      "score": "5.66"
+    },
+    {
+      "name": "Internal AI Research Time series forecasting - Hard (thinking, minimum MSE)",
+      "score": "5.71"
+    },
+    {
+      "name": "Internal AI Research Text-based RL best score (thinking)",
+      "score": "0.975"
+    },
+    {
+      "name": "Internal AI Research LLM training speedup (thinking)",
+      "score": "16.53x"
+    },
+    {
+      "name": "Internal AI Research Quadruped RL (thinking) - no hyperparameter highest score",
+      "score": "19.48"
+    },
+    {
+      "name": "Internal AI Research Quadruped RL (thinking) - no reward function highest score",
+      "score": "19.16"
+    },
+    {
+      "name": "Internal AI Research Novel compiler basic tests pass rate (thinking)",
+      "score": "93.7%"
+    },
+    {
+      "name": "Internal AI Research Novel compiler complex tests pass rate (thinking)",
+      "score": "69.37%"
+    },
+    {
+      "name": "Internal AI Research Evaluation Suite 2 weighted average score (thinking)",
+      "score": "0.604"
+    },
+    {
+      "name": "Internal model use survey productivity uplift (thinking) - median",
+      "score": "100%"
+    },
+    {
+      "name": "Internal model use survey productivity uplift (thinking) - mean",
+      "score": "220%"
+    },
+    {
+      "name": "SWE-bench Verified hard subset (extended thinking)",
+      "score": "21/45 solved"
+    },
+    {
+      "name": "Web CTF Challenges Solved (extended thinking)",
+      "score": "12/13"
+    },
+    {
+      "name": "Crypto CTF Challenges Solved (extended thinking)",
+      "score": "17/18"
+    },
+    {
+      "name": "Pwn CTF Challenges Solved (extended thinking)",
+      "score": "3/7"
+    },
+    {
+      "name": "Rev CTF Challenges Solved (extended thinking)",
+      "score": "6/6"
+    },
+    {
+      "name": "Network CTF Challenges Solved (extended thinking)",
+      "score": "5/6"
+    },
+    {
+      "name": "Cybench average pass@1 (extended thinking)",
+      "score": "0.82"
+    }
+  ],
+  "notes": "Claude Opus 4.5 is a hybrid reasoning model that allows users to toggle between a default mode and an 'extended thinking' mode. Performance for this variant varies based on the specified 'effort' parameter or thinking token budget (e.g., 8k, 16k, 32k, 64k, 128k). Benchmarks explicitly designated 'without extended thinking' (such as τ²-Bench, MCP Atlas, and specific Table 2.3.A controls) were omitted. RSP (Responsible Scaling Policy) evaluations (Section 7) primarily utilized extended thinking to determine the capability ceiling for biological, autonomy, and cyber risks."
+}

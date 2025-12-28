@@ -100,5 +100,5 @@
       "score": "0.943521"
     }
   ],
-  "notes": "Benchmark results are provided specifically for the GPT-5.2 Instant variant (internal API: gpt-5.2-instant or gpt-5.2-chat-latest). Safety evaluations (Production Benchmarks, StrongReject, and Image input evaluations) report 'not_unsafe' rates, where higher scores indicate better compliance with safety policies. Capability-focused benchmarks from the Preparedness Framework and Reasoning sections were excluded because the source documentation only reported results for the 'Thinking' or 'Pro' variants for those specific tests."
+  "notes": "Benchmark results for the GPT-5.2 Instant (gpt-5.2-instant) variant are derived from the official system card and blog post. Reported metrics primarily focus on safety, robustness (disallowed content, jailbreaks, prompt injection), and specialized healthcare performance. General capability and Preparedness Framework benchmarks (e.g., Reasoning, Coding, STEM) in the provided documentation are explicitly attributed to the 'Thinking' and 'Pro' variants and are therefore excluded from this report."
 }

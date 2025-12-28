@@ -64,13 +64,15 @@ async function downloadPdf(url: string): Promise<PdfData | null> {
 
 function getVariantInstruction(variant?: string) {
   return variant
-    ? `IMPORTANT: The user is specifically interested in the "${variant}" variant of the model. Only include benchmark results for THIS VARIANT. Ignore benchmarks for other variants of the model.`
-    : "You may see multiple model variants inside the URL(s) and/or attachment(s). Use a new benchmark result entry for each variant of the model reported (e.g. reasoning vs non-reasoning).";
+    ? `IMPORTANT: The user is specifically interested in the "${variant}" variant of the model. Only include benchmark results for THIS VARIANT and its subsets (e.g. high reasoning vs low reasoning for thinking variant).
+Subsets should ONLY be included when there is ambiguity to the user's specification, such as "Thinking" when "high effort" and "low effort" thinking are available. If there is no ambiguity, do not extract subsets of the variant.
+For each included subset, create a new benchmark result entry for each applicable benchmark.
+Ignore benchmarks for other variants of the model.`
+    : "You may see multiple model variants inside the URL(s) and/or attachment(s). Use a new benchmark result entry for each variant of the model reported for each benchmark (e.g. high reasoning vs low reasoning vs non-reasoning).";
 }
 
 const sharedPromptSuffix = `You MUST use the URL context tool to extract EACH of the provided URL(s) individually and the search tool (if necessary) to find the model release date.
 Do not use the search tool to find any other information besides the model release date. The information inside the URL(s) and/or attachment(s) is the source of truth for benchmark results.
-Use a new benchmark result entry for each variation of a benchmark reported (e.g. different thinking configurations, etc.).
 The current date is ${new Date().toISOString().split("T")[0]}.`;
 
 function getExtractionSystemPrompt(variant?: string) {
@@ -103,7 +105,7 @@ const benchmarkReportSchema = z.object({
   model: z
     .string()
     .describe(
-      "The name of the model (including variant if specified by the user, if not, use the general name of the model) that was benchmarked"
+      "The name of the model that was benchmarked, including variant name if specified by user"
     ),
   date: z
     .string()
@@ -128,7 +130,7 @@ let completedCount = 0;
 async function extractBenchmarks(urlsWithPdfs: UrlWithPdf[], variant?: string) {
   const urls = urlsWithPdfs.map((u) => u.url).join("\n");
   const variantNote = variant
-    ? `\n\nNote: Extract benchmarks for the "${variant}" variant only.`
+    ? `\n\nNote: Only extract benchmarks for the "${variant}" variant (and its subsets, if ambiguous).`
     : "";
   const contents: Part[] = [{ text: urls + variantNote }];
 
@@ -164,7 +166,7 @@ async function combineResults(
 
   const urls = urlsWithPdfs.map((u) => u.url).join("\n");
   const variantNote = variant
-    ? `\nNote: Only include benchmarks for the "${variant}" variant.`
+    ? `\nNote: Only include benchmarks for the "${variant}" variant (and its subsets, if ambiguous).`
     : "";
   const textContent = `URL(s) (fetch these first with the URL context tool):
 ${urls}${variantNote}

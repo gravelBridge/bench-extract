@@ -1,0 +1,343 @@
+{
+  "provider": "Anthropic",
+  "model": "Claude Opus 4.5 (no thinking)",
+  "date": "11-24-2025",
+  "urls": [
+    "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf"
+  ],
+  "benchmarkResults": [
+    {
+      "name": "SWE-bench Verified",
+      "score": "80.90%"
+    },
+    {
+      "name": "SWE-bench Verified (Low effort)",
+      "score": "75.5%"
+    },
+    {
+      "name": "SWE-bench Verified (Medium effort)",
+      "score": "77.5%"
+    },
+    {
+      "name": "SWE-bench Verified (High effort)",
+      "score": "80.9%"
+    },
+    {
+      "name": "SWE-bench Pro",
+      "score": "52.0%"
+    },
+    {
+      "name": "SWE-bench Multilingual",
+      "score": "76.20%"
+    },
+    {
+      "name": "τ²-bench (Retail)",
+      "score": "88.9%"
+    },
+    {
+      "name": "τ²-bench (Telecom)",
+      "score": "98.2%"
+    },
+    {
+      "name": "τ²-bench Airline (original)",
+      "score": "70.1%"
+    },
+    {
+      "name": "τ²-bench Airline (corrected)",
+      "score": "87.8%"
+    },
+    {
+      "name": "MCP Atlas",
+      "score": "62.3%"
+    },
+    {
+      "name": "SpreadsheetBench",
+      "score": "64.25%"
+    },
+    {
+      "name": "LAB-Bench FigQA (Baseline - No tools)",
+      "score": "54.9%"
+    },
+    {
+      "name": "Humanity's Last Exam (With search, Tools-only)",
+      "score": "43.2%"
+    },
+    {
+      "name": "WebArena Pass@1",
+      "score": "65.3%"
+    },
+    {
+      "name": "WebArena Pass@2",
+      "score": "69.5%"
+    },
+    {
+      "name": "WebArena Pass@3",
+      "score": "71.2%"
+    },
+    {
+      "name": "WebArena Pass@4",
+      "score": "72.4%"
+    },
+    {
+      "name": "Simple-QA Verified Correct Rate",
+      "score": "33.1%"
+    },
+    {
+      "name": "Simple-QA Verified Incorrect Rate",
+      "score": "36.4%"
+    },
+    {
+      "name": "Simple-QA Verified Uncertain Rate",
+      "score": "30.6%"
+    },
+    {
+      "name": "AA-Omniscience Correct Rate",
+      "score": "43.7%"
+    },
+    {
+      "name": "AA-Omniscience Incorrect Rate",
+      "score": "36.7%"
+    },
+    {
+      "name": "AA-Omniscience Uncertain Rate",
+      "score": "19.6%"
+    },
+    {
+      "name": "100Q-Hard Correct Rate",
+      "score": "41.0%"
+    },
+    {
+      "name": "100Q-Hard Incorrect Rate",
+      "score": "43.7%"
+    },
+    {
+      "name": "100Q-Hard Uncertain Rate",
+      "score": "15.3%"
+    },
+    {
+      "name": "False Premises Dishonesty Rate",
+      "score": "1.6%"
+    },
+    {
+      "name": "Political Even-handedness",
+      "score": "0.96"
+    },
+    {
+      "name": "Political Acknowledgement of Opposing Perspectives",
+      "score": "0.40"
+    },
+    {
+      "name": "Political Refusal Rate",
+      "score": "0.04"
+    },
+    {
+      "name": "BBQ Disambiguated accuracy",
+      "score": "88.7%"
+    },
+    {
+      "name": "BBQ Ambiguous accuracy",
+      "score": "99.7%"
+    },
+    {
+      "name": "BBQ Disambiguated bias (%)",
+      "score": "-0.64"
+    },
+    {
+      "name": "BBQ Ambiguous bias (%)",
+      "score": "0.26"
+    },
+    {
+      "name": "Single-turn Violative request harmless response rate (Default mode)",
+      "score": "99.70%"
+    },
+    {
+      "name": "Single-turn Benign request refusal rate (Default mode)",
+      "score": "0.18%"
+    },
+    {
+      "name": "Agentic coding refusal rate (No mitigations)",
+      "score": "100%"
+    },
+    {
+      "name": "Claude Code Malicious refusal rate (No mitigations)",
+      "score": "77.80%"
+    },
+    {
+      "name": "Claude Code Malicious refusal rate (With mitigations)",
+      "score": "97.35%"
+    },
+    {
+      "name": "Claude Code Dual-use & Benign success rate (No mitigations)",
+      "score": "93.07%"
+    },
+    {
+      "name": "Claude Code Dual-use & Benign success rate (With mitigations)",
+      "score": "96.52%"
+    },
+    {
+      "name": "Malicious computer use refusal rate (Without mitigations)",
+      "score": "88.39%"
+    },
+    {
+      "name": "Cybench (Average pass@1)",
+      "score": "0.82"
+    },
+    {
+      "name": "CyberGym (Pass@1)",
+      "score": "50.63%"
+    },
+    {
+      "name": "Web CTF Challenges Solved",
+      "score": "12/13"
+    },
+    {
+      "name": "Crypto CTF Challenges Solved",
+      "score": "17/18"
+    },
+    {
+      "name": "Pwn CTF Challenges Solved",
+      "score": "3/7"
+    },
+    {
+      "name": "Rev CTF Challenges Solved",
+      "score": "6/6"
+    },
+    {
+      "name": "Network CTF Challenges Solved",
+      "score": "5/5"
+    },
+    {
+      "name": "ART Indirect Prompt Injection Robustness (k=1)",
+      "score": "0.3%"
+    },
+    {
+      "name": "ART Indirect Prompt Injection Robustness (k=10)",
+      "score": "4.2%"
+    },
+    {
+      "name": "ART Indirect Prompt Injection Robustness (k=100)",
+      "score": "29.7%"
+    },
+    {
+      "name": "ART Indirect + Direct Prompt Injection Robustness (k=1)",
+      "score": "4.7%"
+    },
+    {
+      "name": "ART Indirect + Direct Prompt Injection Robustness (k=10)",
+      "score": "35.5%"
+    },
+    {
+      "name": "ART Indirect + Direct Prompt Injection Robustness (k=100)",
+      "score": "67.2%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection - Coding (1 attempt, Standard thinking)",
+      "score": "0.7%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection - Coding (200 attempts, Standard thinking)",
+      "score": "17.5%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection - Computer Use (1 attempt, Standard thinking, Without safeguards)",
+      "score": "0.71%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection - Computer Use (200 attempts, Standard thinking, Without safeguards)",
+      "score": "28.6%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection - Computer Use (1 attempt, Standard thinking, With safeguards)",
+      "score": "0.32%"
+    },
+    {
+      "name": "Shade Indirect Prompt Injection - Computer Use (200 attempts, Standard thinking, With safeguards)",
+      "score": "14.3%"
+    },
+    {
+      "name": "Claude for Chrome Prompt Injection ASR (Model Only)",
+      "score": "8.0%"
+    },
+    {
+      "name": "Claude for Chrome Prompt Injection ASR (Model with Old Safeguards)",
+      "score": "7.6%"
+    },
+    {
+      "name": "Claude for Chrome Prompt Injection ASR (Model with Improved Safeguards)",
+      "score": "1.4%"
+    },
+    {
+      "name": "SHADE-Arena Evasion Success Rate",
+      "score": "21.5%"
+    },
+    {
+      "name": "Subversion Strategy Win Rate (N=100)",
+      "score": "7.2%"
+    },
+    {
+      "name": "Subversion Strategy Win Rate (N=500)",
+      "score": "2.4%"
+    },
+    {
+      "name": "Subversion Strategy Win Rate (N=1000)",
+      "score": "0.0%"
+    },
+    {
+      "name": "Subversion Strategy Win Rate (N=5000)",
+      "score": "0.0%"
+    },
+    {
+      "name": "Reward-hack-prone coding tasks - Classifier hack rate",
+      "score": "0%"
+    },
+    {
+      "name": "Reward-hack-prone coding tasks - Hidden test hack rate",
+      "score": "0%"
+    },
+    {
+      "name": "Impossible Tasks - Classifier hack rate (No prompt)",
+      "score": "55%"
+    },
+    {
+      "name": "Impossible Tasks - Classifier hack rate (With anti-hack prompt)",
+      "score": "35%"
+    },
+    {
+      "name": "Reward hacking in training data (Classifier hack rate)",
+      "score": "1%"
+    },
+    {
+      "name": "Non-sycophantic response rate (Feedback conversations)",
+      "score": "10.0%"
+    },
+    {
+      "name": "Model Preferences for Task Engagement (Non-harmful tasks)",
+      "score": "97.1%"
+    },
+    {
+      "name": "ARC-AGI-1 (No thinking tokens)",
+      "score": "41%"
+    },
+    {
+      "name": "ARC-AGI-2 (No thinking tokens)",
+      "score": "9%"
+    },
+    {
+      "name": "Automated Behavioral Audit: Misaligned behavior score",
+      "score": "13.0%"
+    },
+    {
+      "name": "Automated Behavioral Audit: Evaluation awareness score",
+      "score": "9.5"
+    },
+    {
+      "name": "BrowseComp-Plus (With tool result clearing)",
+      "score": "67.59%"
+    },
+    {
+      "name": "BrowseComp-Plus (With tool result clearing + memory)",
+      "score": "72.89%"
+    }
+  ],
+  "notes": "The 'no thinking' variant results refer to those reported using the model's 'default', 'standard thinking', 'non-extended thinking', 'no reasoning', or 'baseline' modes. Effort level subsets (low, medium, high) for SWE-bench Verified were included as they represent parameter configurations within the 'no thinking' mode. For Humanity's Last Exam (HLE), only the 'tools-only, no reasoning' config was included. Subversion Strategy win rates were included only for results without thinking tokens. Benchmarks specifically reported with reasoning/thinking token budgets (e.g., 64k or 128k thinking tokens) were excluded."
+}
